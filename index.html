@@ -1,29 +1,25 @@
 <!DOCTYPE html>
 <html lang="es-ES">
 
-    <!doctype html>
-    <html lang="es-ES">
-    
-    <head>
-        <title>Formulario. </title>
-        <meta http-equiv="content-type" content="text/html; charset=utf-8">
-        <link rel="stylesheet" href="style.css" type="text/css" />
-        <link href="img/icono.png" type="icono/png" rel="icon">
-    </head>
+<!doctype html>
+<html lang="es-ES">
+
+<head>
+    <title>Formulario. </title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link href="img/icono.png" type="icono/png" rel="icon">
+</head>
+
 <body>
     <h1>FORMULARIO DE TRABAJO</h1>
 
     <form>
         <fieldset>
-            <legend>Datos a rellenar.</legend>
+            <legend><strong>Informacion personal.</strong></legend>
             Nombre y apellidos:
             <br>
             <input type="text" name="campo_de_texto">
-            <input type="text" name="campo_de_texto">
-            <br>
-            <label> Correo de contacto:<br> <input type="text" name="usuario"> </label>
-            <br>
-            DNI:<br>
             <input type="text" name="campo_de_texto">
             <br>
             Edad:
@@ -45,9 +41,35 @@
                 <option value="16">29</option>
                 <option value="17">30</option>
             </select>
+            <br>
+            <br>
+            Género
+            <select name="genero">
+                <option value="hombre">Hombre
+                <option value="mujer">Mujer
+                <option value="no binario">No binario
+                <option value="otros">Otros
+            </select>
+            <br>
+            Telefono:
+            <br>
+            <input type="text" value="+34-" name="telefono" size="15"><br>
+            <label> Correo de contacto:<br> <input type="text" name="usuario"> </label>
+            <br>
+            DNI:<br>
+            <input type="text" name="campo_de_texto">
+            <br>
+            <br>
+            Adjunte foto de su DNI por delante y por detras:<br>
+            <input type="file" name="foto"><br>
+            <input type="file" name="foto">
+            <br>
+
         </fieldset>
-        <fieldset>
-            <legend>Observaciones</legend>
+        <fieldset class="class2">
+            <legend><strong>Observaciones</strong></legend>
+            Breve presentación personal:<br>
+            <textarea name="presentation" rows="4" cols="45"></textarea>
             <br>
             Indique por qué es apto para el trabajo:<br>
             <textarea name="curriculum" rows="5" cols="60"></textarea>
@@ -57,15 +79,13 @@
 
         <br>
         <fieldset><br>
+
             Seleccione los idiomas que conoce:
             <br>
-            <input type="checkbox" name="Castellano">Castellano<br>
-            <input type="checkbox" name="Inglés">Inglés<br>
-            <input type="checkbox" name="Francés">Francés<br>
-            <input type="checkbox" name="Catalán">Catalán<br>
-        </fieldset>
-        <br>
-        <fieldset>
+            <input type="radio" name="Castellano">Castellano<br>
+            <input type="radio" name="Catalán">Catalán<br>
+            <input type="radio" name="Inglés">Inglés<br>
+            <input type="radio" name="Francés">Francés<br>
             Seleccione provinvicia de procedencia:
             <br>
             <select name="articulo">
@@ -74,11 +94,14 @@
                     <option value="2">Barcelona</option>
                     <option value="3">Girona</option>
                     <option value="4">Tarragona</option>
+                </optgroup>
+            </select>
 
         </fieldset>
         <br>
-        <button type="submit">Enviar<img src="img/envio.gif" alt="envio"></button>
-        <button type="reset">Borrar<img src="img/papelera.gif" alt="borrado"></button>
+
+        <button type="submit"><a href="./final.html"></a>Enviar<img class="class1" src="img/envio.gif" alt="envio"></button>
+        <button type="reset">Borrar<img class="class1" src="img/papelera.gif" alt="borrado"></button>
     </form>
 </body>
 
